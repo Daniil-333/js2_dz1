@@ -5,7 +5,7 @@ const data = [
     { title: 'Gamepad', id: 4, price: 87 }
 ];
 
-const renderProduct = (title, id, price) => {
+const renderProduct = (title = 'Товар отсутствует', id = '0', price = '0') => {
     return `
         <div class="product-item">
             <h3>${title}</h3>
@@ -15,9 +15,9 @@ const renderProduct = (title, id, price) => {
 };
 
 const render = (products) => {
-    const productsList = products.map(item => renderProduct(item.title, item.id, item.price));
+    document.querySelector('.products').innerHTML = 
+    products.map(item => renderProduct(item.title, item.id, item.price)).join('');
 
-    document.querySelector('.products').innerHTML = productsList;
 };
 
 render(data);

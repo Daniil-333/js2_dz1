@@ -1,0 +1,39 @@
+.header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+    box-shadow: 2px 2px 15px 2px rgb(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+.btn-cart {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 2px solid #666666;
+    border-radius: 10px;
+}
+.btn-cart:hover {
+    cursor: pointer;
+    border: 2px solid #cccccc;
+}
+.btn-cart:focus {
+    outline: none;
+    border: 2px solid #cccccc;
+}
+.btn-cart:active {
+    border: 2px solid #ffccff;
+}
+.products {
+    display: flex;
+    justify-content: space-around;
+}
+.product-item {
+    width: 150px;
+    outline: 1px solid #cccccc;
+    padding: 10px;
+}
+.product-item h3 {
+    font-size: 24px;
+}
+.product-item p {
+    font-size: 18px;
+}
